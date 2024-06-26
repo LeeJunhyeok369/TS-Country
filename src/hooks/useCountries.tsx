@@ -12,7 +12,6 @@ export const useCountries = () => {
       setLoading(true);
       try {
         const data = await getCountries();
-        console.log(data);
         setCountries(data);
       } catch (err) {
         setError("Failed to fetch countries");
